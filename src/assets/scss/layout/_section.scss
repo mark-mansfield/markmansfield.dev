@@ -1,0 +1,15 @@
+/* Section */
+#section {
+  color: black;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  h1 {
+    color: black;
+  }
+
+  .container {
+    max-width: 60vw;
+  }
+}
