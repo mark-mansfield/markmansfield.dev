@@ -2,8 +2,10 @@ import React from 'react'
 import Layout from '../components/layout'
 
 import Header from '../components/Header'
-import Main from '../components/Main'
+// import Main from '../components/Main'
 import About from '../components/About'
+import Work from '../components/Work'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 class IndexPage extends React.Component {
@@ -95,20 +97,25 @@ class IndexPage extends React.Component {
           }`}
         >
           <div id="wrapper">
-            <Header
-              onOpenArticle={this.handleOpenArticle}
-              timeout={this.state.timeout}
-            />
-            <Main
+            <div id="hero" className="set-height">
+              <Header
+                onOpenArticle={this.handleOpenArticle}
+                timeout={this.state.timeout}
+              />
+            </div>
+
+            {/* <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
-            />
+            /> */}
 
             <About />
+            <Work />
+            <Contact />
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg" />

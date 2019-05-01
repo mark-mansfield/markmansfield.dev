@@ -2,14 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Scroll from './Scroll'
 const Header = props => (
-  <header
-    id="header"
-    style={
-      props.timeout
-        ? { display: 'none' }
-        : { marginTop: '20vh', height: '100vh' }
-    }
-  >
+  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
       <span className="icon fa-code" />
     </div>
@@ -21,7 +14,7 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
+        {/* <li>
           <a
             href="javascript:;"
             onClick={() => {
@@ -30,16 +23,11 @@ const Header = props => (
           >
             Intro
           </a>
-        </li>
+        </li> */}
         <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </a>
+          <Scroll type="id" element="work">
+            <a>Work</a>
+          </Scroll>
         </li>
         <li>
           <Scroll type="id" element="about_me">
@@ -47,14 +35,9 @@ const Header = props => (
           </Scroll>
         </li>
         <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
-            Contact
-          </a>
+          <Scroll type="id" element="contact">
+            <a>Contact</a>
+          </Scroll>
         </li>
       </ul>
     </nav>

@@ -24,7 +24,8 @@
   }
 
   @include breakpoint(xlarge) {
-    padding: 3rem 2rem;
+    // padding: 3rem 2rem;
+    padding: none;
   }
 
   @include breakpoint(small) {

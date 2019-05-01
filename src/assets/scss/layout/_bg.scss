@@ -9,7 +9,7 @@
 #bg {
   @include vendor('transform', 'scale(1.0)');
   -webkit-backface-visibility: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -54,7 +54,7 @@
         'filter #{_duration(article)} ease-in-out'
       )
     );
-    background-image: url('../../images/sydney-2773440.svg');
+    background-image: url('../../images/sydney.svg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;

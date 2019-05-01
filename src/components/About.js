@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="section">
+    <section id="section" className="set-height">
       <div className="container" id="about_me">
         <h1>About Me</h1>
         <p>
