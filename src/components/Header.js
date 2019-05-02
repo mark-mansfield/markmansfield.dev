@@ -25,17 +25,17 @@ const Header = props => (
           </a>
         </li> */}
         <li>
-          <Scroll type="id" element="work">
+          <Scroll type="class" element="work">
             <a>Work</a>
           </Scroll>
         </li>
         <li>
-          <Scroll type="id" element="about_me">
+          <Scroll type="class" element="about_me">
             <a>About</a>
           </Scroll>
         </li>
         <li>
-          <Scroll type="id" element="contact">
+          <Scroll type="class" element="contact">
             <a>Contact</a>
           </Scroll>
         </li>

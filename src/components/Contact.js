@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <section id="section" className="set-height">
-      <div className="container" id="contact">
+    <section id="section" className="contact set-height">
+      <div className="container">
         <h1>Contact Me</h1>
         <p>Contact me here</p>
       </div>
