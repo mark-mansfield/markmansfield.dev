@@ -84,11 +84,6 @@ const Ethos = () => {
               <i className="fas fa-ruler-combined fa-2x" />
               <p>Cross browser pixel perfect layouts are no problem.</p>
             </div>
-            {/* <i className="fas fa-tools" />
-              <i className="fas fa-universal-access" />
-              <i className="fas fa-code" />
-              <i className="fas fa-user" />
-              <i className="fas fa-drafting-compass" /> */}
           </div>
         </div>
       </div>
