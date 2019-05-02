@@ -9,8 +9,12 @@
     color: black;
   }
 
-  .container {
+  .container-partial-width {
     max-width: 70vw;
     margin-top: 10%;
+  }
+
+  .container-full-width {
+    width: 100vw;
   }
 }

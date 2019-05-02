@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section id="section" className="about_me set-height">
-      <div className="container">
+      <div className="container-partial-width">
         <h1>Who is Mark?</h1>
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
           <div>

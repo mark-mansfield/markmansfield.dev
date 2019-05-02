@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import Header from '../components/Header'
 // import Main from '../components/Main'
 import About from '../components/About'
+import Ethos from '../components/Ethos'
 import Work from '../components/Work'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -114,6 +115,7 @@ class IndexPage extends React.Component {
             /> */}
 
             <About />
+            <Ethos />
             <Work />
             <Contact />
             <Footer timeout={this.state.timeout} />

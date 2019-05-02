@@ -3,8 +3,8 @@ import React from 'react'
 const Ethos = () => {
   return (
     <section id="section" className="">
-      <div className="container" id="about_me">
-        <div className="container">
+      <div className="container-full-width">
+        <div className="">
           <div
             style={{
               display: 'flex',
