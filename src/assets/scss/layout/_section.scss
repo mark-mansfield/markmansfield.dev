@@ -7,17 +7,29 @@
   @include vendor('flex-direction', 'row');
   @include vendor('align-items', 'center');
   @include vendor('justify-content', 'center');
-  display: flex;
-  justify-content: center;
+
   h1 {
     color: black;
   }
 
   .container-partial-width {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'row');
+    @include vendor('align-items', 'start');
+    @include vendor('justify-content', 'center');
     max-width: 70vw;
   }
 
   .container-full-width {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'row');
+    @include vendor('align-items', 'start');
+    @include vendor('justify-content', 'center');
     width: 100vw;
+  }
+
+  .about-profile-layout {
+    @include vendor('display', 'flex');
+    @include vendor('justify-content', 'space-around');
   }
 }

@@ -4,19 +4,18 @@ const About = () => {
   return (
     <section id="section" className="about_me set-height">
       <div className="container-partial-width">
-        <h1>Who is Mark?</h1>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-          <div>
-            <div
-              className="profile-img"
-              style={{
-                position: 'relative',
-                width: '600px',
-                height: '600px',
-                backgroundColor: '#ccc',
-              }}
-            />
-          </div>
+        <h1 style={{ textAlign: 'center' }}>Who is Mark?</h1>
+        <div className="about-profile-layout">
+          <div
+            className="about-profile-img"
+            style={{
+              position: 'relative',
+              width: '30%',
+              height: '500px',
+              backgroundColor: '#ccc',
+            }}
+          />
+
           <div className="profile-info" style={{ maxWidth: '50%' }}>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
