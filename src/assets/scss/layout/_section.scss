@@ -23,7 +23,7 @@
   .container-full-width {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'row');
-    @include vendor('align-items', 'start');
+    @include vendor('align-items', 'center');
     @include vendor('justify-content', 'center');
     width: 100vw;
   }
@@ -31,5 +31,35 @@
   .about-profile-layout {
     @include vendor('display', 'flex');
     @include vendor('justify-content', 'space-around');
+  }
+
+  .ethos {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'row');
+    @include vendor('align-items', 'center');
+    @include vendor('justify-content', 'center');
+    height: 300px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    .ethos-list {
+      @include vendor('display', 'flex');
+      @include vendor('flex-direction', 'row');
+      @include vendor('align-items', 'start');
+      @include vendor('justify-content', 'center');
+      list-style-type: none;
+      margin: 10px;
+
+      li {
+        width: 300px;
+        margin: 0 20px;
+        text-align: center;
+        i {
+          margin-bottom: 40px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
   }
 }
