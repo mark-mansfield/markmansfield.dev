@@ -3,6 +3,10 @@
   color: black;
   width: 100vw;
   background-color: white;
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'row');
+  @include vendor('align-items', 'center');
+  @include vendor('justify-content', 'center');
   display: flex;
   justify-content: center;
   h1 {
@@ -11,11 +15,9 @@
 
   .container-partial-width {
     max-width: 70vw;
-    margin-top: 10%;
   }
 
   .container-full-width {
-    margin-top: 10%;
     width: 100vw;
   }
 }
