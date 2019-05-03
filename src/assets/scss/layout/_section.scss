@@ -133,11 +133,18 @@
     }
   }
 
-  .contact {
+  .contact-layout {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
     grid-gap: 20px;
+    img {
+      width: 100px;
+      margin: 0 auto;
+    }
+    .contact-layout-item-1 {
+      grid-column: 2 / 2;
+    }
   }
 }
 
