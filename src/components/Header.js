@@ -25,8 +25,8 @@ const Header = props => (
           </a>
         </li> */}
         <li>
-          <Scroll type="class" element="work">
-            <a>Work</a>
+          <Scroll type="class" element="portfolio">
+            <a>portfolio</a>
           </Scroll>
         </li>
         <li>
