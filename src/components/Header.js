@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Scroll from './Scroll'
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
@@ -9,7 +10,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Mark Mansfield</h1>
-        <p>Web Developer - Sydney</p>
+        <p>Front-end Developer - Sydney</p>
       </div>
     </div>
     <nav>

@@ -1,19 +1,14 @@
 import React from 'react'
-
-const PortfolioDescription = () => {
+import SimpleBanner from '../../presentation-components/simple-banner/SimpleBanner'
+const PortfolioDescription = props => {
   return (
-    <section id="section" className="container-full-width portfolio ">
-      <div className="portfolio">
-        <div className="portfolio-desc">
-          <h1>Portfolio</h1>
-          <p>
-            Below you can see some projects I've been working on lately. As I am
-            starting out all of these projects are either non paid or fictitious
-            projects.
-          </p>
-        </div>
-      </div>
-    </section>
+    <SimpleBanner
+      scrollTarget={props.scrollTarget}
+      title="Portfolio"
+      text="Below you can see some projects I've been working on lately. As I am
+    starting out all of these projects are either non paid or fictitious
+    projects."
+    />
   )
 }
 export default PortfolioDescription

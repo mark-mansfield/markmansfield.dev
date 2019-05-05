@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "Mark Mansfield",
   "dependencies": {
+    "axios": "^0.18.0",
+    "formik": "^1.5.4",
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
@@ -11,10 +13,14 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
+    "nodemailer": "^6.1.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-helmet": "^5.2.0",
-    "react-scroll-to-element": "^0.2.0"
+    "react-icons": "^3.6.1",
+    "react-modal": "^3.8.1",
+    "react-scroll-to-element": "^0.2.0",
+    "yup": "^0.27.0"
   },
   "keywords": [
     "gatsby"
