@@ -51,6 +51,14 @@ a {
   }
 }
 
+.icon {
+  color: #666;
+
+  &:hover {
+    color: darkcyan;
+  }
+}
+
 strong,
 b {
   color: _palette(fg-bold);

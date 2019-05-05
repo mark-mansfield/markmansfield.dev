@@ -22,30 +22,27 @@ class IndexPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      isArticleVisible: false,
-      timeout: false,
-      articleTimeout: false,
-      article: '',
-      loading: 'is-loading',
+      // isArticleVisible: false,
+      // timeout: false,
+      // articleTimeout: false,
+      // article: '',
+      // loading: 'is-loading',
       modalIsOpen: false,
     }
-    // this.handleOpenArticle = this.handleOpenArticle.bind(this)
-    // this.handleCloseArticle = this.handleCloseArticle.bind(this)
-    // this.setWrapperRef = this.setWrapperRef.bind(this)
   }
 
   componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' })
-    }, 100)
-    document.addEventListener('mousedown', this.handleClickOutside)
+    // this.timeoutId = setTimeout(() => {
+    //   this.setState({ loading: '' })
+    // }, 100)
+    // document.addEventListener('mousedown', this.handleClickOutside)
   }
 
   componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
-    }
-    document.removeEventListener('mousedown', this.handleClickOutside)
+    // if (this.timeoutId) {
+    //   clearTimeout(this.timeoutId)
+    // }
+    // document.removeEventListener('mousedown', this.handleClickOutside)
   }
 
   _handleShowModal = () => {
@@ -113,19 +110,19 @@ class IndexPage extends React.Component {
   //   }
   // }
 
-  static childContextTypes = {
-    reactIconBase: PropTypes.object,
-  }
+  // static childContextTypes = {
+  //   reactIconBase: PropTypes.object,
+  // }
 
-  getChildContext() {
-    return {
-      reactIconBase: {
-        fill: 'tomato',
-        size: 24,
-        style: {},
-      },
-    }
-  }
+  // getChildContext() {
+  //   return {
+  //     reactIconBase: {
+  //       fill: 'tomato',
+  //       size: 24,
+  //       style: {},
+  //     },
+  //   }
+  // }
 
   render() {
     // modal styling
@@ -156,58 +153,57 @@ class IndexPage extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div
+        {/* <div
           className={`body ${this.state.loading} ${
             this.state.isArticleVisible ? 'is-article-visible' : ''
           }`}
-        >
-          <div id="wrapper">
-            <div className="contact-layout">
-              <a
-                href="https://www.facebook.com/mmansfield"
-                alt="marks facebook page"
-                title="contact me via this platform"
-              >
-                <i className="fab fa-facebook fa-2x icon-color" />
-              </a>
+        > */}
+        <div id="wrapper">
+          {/* <div className="contact-layout">
+            <a
+              href="https://www.facebook.com/mmansfield"
+              alt="marks facebook page"
+              title="contact me via this platform"
+            >
+              <i className="fab fa-facebook fa-2x icon-color" />
+            </a>
 
-              <i className="fab fa-linkedin-in fa-2x icon-color" />
-              <i className="fab fa-github fa-2x icon-color" />
-            </div>
-            <div id="hero" className="aboveFoldHeight">
-              <Modal
-                closeTimeoutMS={300}
-                style={style}
-                isOpen={this.state.modalIsOpen}
-                onAfterOpen={this.afterOpenModal}
-                onRequestClose={this.closeModal}
-                contentLabel="Example Modal"
+            <i className="fab fa-linkedin-in fa-2x icon-color" />
+            <i className="fab fa-github fa-2x icon-color" />
+          </div> */}
+          <div id="hero" className="aboveFoldHeight">
+            <Modal
+              closeTimeoutMS={300}
+              style={style}
+              isOpen={this.state.modalIsOpen}
+              onAfterOpen={this.afterOpenModal}
+              onRequestClose={this.closeModal}
+              contentLabel="Example Modal"
+            >
+              <div
+                className="modal__toolbar"
+                ref={toolbar => (this.toolbar = toolbar)}
               >
                 <div
-                  className="modal__toolbar"
-                  ref={toolbar => (this.toolbar = toolbar)}
+                  ref={close => (this.close = close)}
+                  onClick={this.closeModal}
                 >
-                  <div
-                    ref={close => (this.close = close)}
-                    onClick={this.closeModal}
-                  >
-                    <MdClose
-                      className="modal__close"
-                      style={{ color: 'black' }}
-                    />
-                  </div>
+                  <MdClose
+                    className="modal__close"
+                    style={{ color: 'black' }}
+                  />
                 </div>
+              </div>
 
-                <ContactForm />
-              </Modal>
+              <ContactForm />
+            </Modal>
 
-              <Header
-                onOpenArticle={this.handleOpenArticle}
-                timeout={this.state.timeout}
-              />
-            </div>
-
-            {/* <Main
+            <Header
+            // onOpenArticle={this.handleOpenArticle}
+            // timeout={this.state.timeout}
+            />
+          </div>
+          {/* <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
@@ -215,17 +211,19 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
             /> */}
-            {/* <SayHello />
-            <About />
-            <Skills />
-            <Ethos />
+          <Skills />
+          <Ethos />
+          <SayHello />
+          c
+          <About />
+          {/*<
             <PortfolioDescription scrollTarget="portfolio" />
             <Projects />
 
-            <Footer timeout={this.state.timeout} /> */}
-          </div>
-          {/* <div id="bg" /> */}
+            Footer timeout={this.state.timeout} /> */}
         </div>
+        {/* <div id="bg" /> */}
+        {/* </div> */}
       </Layout>
     )
   }
