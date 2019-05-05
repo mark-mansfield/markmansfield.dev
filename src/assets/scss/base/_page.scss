@@ -41,8 +41,7 @@ body {
   @include vendor('display', 'flex');
   @include vendor('flex-direction', 'column');
   @include vendor('align-items', 'center');
-  @include vendor('justify-content', 'flex-start');
-  margin-top: 10%;
+  @include vendor('justify-content', '' space-around);
 }
 
 .aboveFoldHeight {
@@ -64,4 +63,14 @@ body {
   .modal__close:hover {
     cursor: pointer;
   }
+}
+// prevent FOUC in development
+// this inline style added to hide gatsby element in public / index.html
+// #___gatsby {
+//   display: block !important;
+// }
+
+// show gatsby after base css is loaded
+#___gatsby {
+  display: block !important;
 }
