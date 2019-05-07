@@ -9,79 +9,112 @@ const projects = () => {
       <div className="projects">
         <div className="project">
           <div className="description">
-            <h1>Project 1</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              nesciunt molestiae deleniti iste! Nemo ducimus a dicta, deleniti
-              est adipisci ab ipsa. Eaque suscipit enim, sit repellat velit
-              assumenda molestiae, ratione officia voluptate natus ut asperiores
-              dicta ducimus sapiente mollitia accusantium adipisci? Fuga minima
-              possimus omnis beatae soluta, quos labore!
-            </p>
+            <div className="title">
+              <h1>FoodCosts.io</h1>
+              <small>personal project</small>
+            </div>
+            <div className="project-type">
+              <small>angular / node.js / express / mongodb</small>
+            </div>
+
+            <div className="project-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
+                dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
+                repellat velit assumenda molestiae, ratione officia voluptate
+                natus ut asperiores dicta ducimus sapiente mollitia accusantium
+                adipisci? Fuga minima possimus omnis beatae soluta, quos labore!
+              </p>
+            </div>
             <div className="toolbar">
               <button>View project</button>
               <button>GIT HUB</button>
             </div>
+            <img src={project1} alt="project1" />
           </div>
-          <img style={{ width: '40%' }} src={project1} alt="project1" />
+          <img src={project1} alt="project1" />
         </div>
         <div className="project">
           <div className="description">
-            <h1>Project 2</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              nesciunt molestiae deleniti iste! Nemo ducimus a dicta, deleniti
-              est adipisci ab ipsa. Eaque suscipit enim, sit repellat velit
-              assumenda molestiae, ratione officia voluptate natus ut asperiores
-              dicta ducimus sapiente mollitia accusantium adipisci? Fuga minima
-              possimus omnis beatae soluta, quos labore!
-            </p>
+            <div className="title">
+              <h1>catering.io</h1>
+              <small>personal project</small>
+            </div>
+            <div className="project-type">
+              <small>gatsby / react / node / webpack</small>
+            </div>
+            <div className="project-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
+                dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
+                repellat velit assumenda molestiae, ratione officia voluptate
+                natus ut asperiores dicta ducimus sapiente mollitia accusantium
+                adipisci? Fuga minima possimus omnis beatae soluta, quos labore!
+              </p>
+            </div>
             <div className="toolbar">
               <button>View project</button>
               <button>GIT HUB</button>
             </div>
+            <img src={project2} alt="project2" />
           </div>
-          <img style={{ width: '40%' }} src={project2} alt="project1" />
+          <img src={project2} alt="project2" />
         </div>
         <div className="project">
           <div className="description">
-            <h1>Project 3</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              nesciunt molestiae deleniti iste! Nemo ducimus a dicta, deleniti
-              est adipisci ab ipsa. Eaque suscipit enim, sit repellat velit
-              assumenda molestiae, ratione officia voluptate natus ut asperiores
-              dicta ducimus sapiente mollitia accusantium adipisci? Fuga minima
-              possimus omnis beatae soluta, quos labore!
-            </p>
+            <div className="title">
+              <h1>Brown Sugar</h1>
+              <small>fictitious static website project</small>
+            </div>
+            <div className="project-type">
+              <small>gatsby / react / node / webpack</small>
+            </div>
+            <div className="project-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
+                dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
+                repellat velit assumenda molestiae, ratione officia voluptate
+                natus ut asperiores dicta ducimus sapiente mollitia accusantium
+                adipisci? Fuga minima possimus omnis beatae soluta, quos labore!
+              </p>
+            </div>
             <div className="toolbar">
               <button>View project</button>
               <button>GIT HUB</button>
             </div>
+            <img src={project3} alt="project3" />
           </div>
-          <img style={{ width: '40%' }} src={project3} alt="project1" />
+          <img src={project3} alt="project3" />
         </div>
         <div className="project">
           <div className="description">
-            <h1>Project 4</h1>
-            <hr />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-              nesciunt molestiae deleniti iste! Nemo ducimus a dicta, deleniti
-              est adipisci ab ipsa. Eaque suscipit enim, sit repellat velit
-              assumenda molestiae, ratione officia voluptate natus ut asperiores
-              dicta ducimus sapiente mollitia accusantium adipisci? Fuga minima
-              possimus omnis beatae soluta, quos labore!
-            </p>
+            <div className="title">
+              <h1>SharkData</h1>
+              <small>ficticious project</small>
+            </div>
+            <div className="project-type">
+              <small>angular / node / express / mongoDb</small>
+            </div>
+            <div className="project-text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
+                dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
+                repellat velit assumenda molestiae, ratione officia voluptate
+                natus ut asperiores dicta ducimus sapiente mollitia accusantium
+                adipisci? Fuga minima possimus omnis beatae soluta, quos labore!
+              </p>
+            </div>
             <div className="toolbar">
               <button>View project</button>
               <button>GIT HUB</button>
             </div>
+            <img src={project3} alt="project3" />
           </div>
-          <img style={{ width: '40%' }} src={project4} alt="project1" />
+          <img src={project3} alt="project3" />
         </div>
       </div>
     </section>

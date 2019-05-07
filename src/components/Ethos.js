@@ -7,7 +7,7 @@ const Ethos = () => {
         <ul className="ethos-list">
           <li>
             <i className="fas fa-code fa-3x" />
-            <p>I passionate about writing clean self documenting code</p>
+            <p>I am passionate about writing clean self documenting code</p>
           </li>
           <li>
             <i className="fas fa-universal-access fa-3x" />
@@ -16,7 +16,10 @@ const Ethos = () => {
           <li>
             <i className="fas fa-wrench fa-3x" />
             <p>
-              I love my tool belt and am always looking to update my toolchain
+              vs-code / google dev tools / sass / angular 6 / gatsby / react /
+              github
+              <br />
+              Status = much loved!
             </p>
           </li>
           <li>

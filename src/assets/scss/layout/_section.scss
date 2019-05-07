@@ -88,7 +88,7 @@
         @include vendor('align-items', 'flex-start');
         @include vendor('justify-content', 'center');
         width: 20%;
-        margin: 6rem;
+        margin: 6rem 0;
         h1 {
           margin-bottom: 0;
         }
@@ -98,6 +98,9 @@
           background-color: #c5c5c5;
           height: 0.0625em;
           border: none;
+        }
+        img {
+          display: none;
         }
         .toolbar {
           @include vendor('display', 'flex');
@@ -114,6 +117,7 @@
         }
       }
       img {
+        width: 40%;
         margin: 6rem;
       }
     }
@@ -189,6 +193,44 @@
         }
       }
     }
+    .projects {
+      .project {
+        @include vendor('flex-direction', 'column');
+        @include vendor('align-items', 'center');
+        @include vendor('justify-content', 'center');
+        .description {
+          width: 70%;
+          margin: 6rem 0;
+          .title {
+            order: 0;
+          }
+          img {
+            order: 1;
+            width: 100%;
+            margin: 20px 0;
+            display: block;
+            position: relative;
+            left: -8px;
+          }
+          .project-type {
+            order: 2;
+            height: 50px;
+          }
+          .project-text {
+            order: 3;
+          }
+          .toolbar {
+            display: flex;
+            justify-content: space-between;
+            order: 4;
+            width: 100%;
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+    }
   }
 }
 // small breakpoint
@@ -214,6 +256,44 @@
           @include vendor('align-items', 'center');
           @include vendor('justify-content', 'center');
           width: 50%;
+        }
+      }
+    }
+    .projects {
+      .project {
+        @include vendor('flex-direction', 'column');
+        @include vendor('align-items', 'center');
+        @include vendor('justify-content', 'center');
+        .description {
+          width: 70%;
+          margin: 6rem 0;
+          .title {
+            order: 0;
+          }
+          img {
+            order: 1;
+            width: 100%;
+            margin: 20px 0;
+            display: block;
+            position: relative;
+            left: -8px;
+          }
+          .project-type {
+            order: 2;
+            height: 50px;
+          }
+          .project-text {
+            order: 3;
+          }
+          .toolbar {
+            display: flex;
+            justify-content: space-between;
+            order: 4;
+            width: 100%;
+          }
+        }
+        img {
+          display: none;
         }
       }
     }

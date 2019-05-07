@@ -29,6 +29,7 @@ class IndexPage extends React.Component {
       // loading: 'is-loading',
       modalIsOpen: false,
     }
+    this._handleShowModal = this._handleShowModal.bind(this)
   }
 
   componentDidMount() {
@@ -181,26 +182,36 @@ class IndexPage extends React.Component {
               contentLabel="Example Modal"
             >
               <div
-                className="modal__toolbar"
-                ref={toolbar => (this.toolbar = toolbar)}
+                ref={close => (this.close = close)}
+                onClick={this.closeModal}
               >
-                <div
-                  ref={close => (this.close = close)}
-                  onClick={this.closeModal}
-                >
-                  <MdClose
-                    className="modal__close"
-                    style={{ color: 'black' }}
-                  />
-                </div>
+                <MdClose className="modal__close" style={{ color: 'black' }} />
               </div>
+              <section
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  width: '100%',
+                  height: '100%',
+                }}
+              >
+                <div style={{ width: '50%' }}>
+                  <div
+                    className="modal__toolbar"
+                    ref={toolbar => (this.toolbar = toolbar)}
+                  />
 
-              <ContactForm />
+                  <ContactForm />
+                </div>
+              </section>
             </Modal>
 
             <Header
-            // onOpenArticle={this.handleOpenArticle}
-            // timeout={this.state.timeout}
+              // onOpenArticle={this.handleOpenArticle}
+              // timeout={this.state.timeout}
+              modalState={this._handleShowModal}
             />
           </div>
           {/* <Main
@@ -214,11 +225,13 @@ class IndexPage extends React.Component {
           <Skills />
           <Ethos />
           <SayHello />
-          c
+
           <About />
+          <PortfolioDescription scrollTarget="portfolio" />
+          <Projects />
           {/*<
-            <PortfolioDescription scrollTarget="portfolio" />
-            <Projects />
+
+
 
             Footer timeout={this.state.timeout} /> */}
         </div>
