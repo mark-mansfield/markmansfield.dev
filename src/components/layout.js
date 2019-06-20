@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-
+import emailjs from 'emailjs-com'
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {
@@ -31,14 +31,12 @@ const Layout = ({ children, location }) => {
       `}
       render={data => (
         <>
-          <Helmet
-            title={data.site.siteMetadata.title}
-            meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
-            ]}
-          >
+          <Helmet>
             <html lang="en" />
+            <script
+              type="text/javascript"
+              src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+            />
           </Helmet>
           {content}
         </>

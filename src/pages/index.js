@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import axios from 'axios'
 import { MdClose } from 'react-icons/md'
 import Modal from 'react-modal'
-
+import 'animate.css/animate.min.css'
 import Header from '../components/Header'
 import SayHello from '../components/SayHello'
 import About from '../components/About'
@@ -13,8 +13,10 @@ import Skills from '../components/Skills'
 import PortfolioDescription from '../components/portfolio/description/Description'
 import Projects from '../components/portfolio/projects/Projects'
 import ContactForm from '../components/ContactForm'
+
 import Footer from '../components/Footer'
 
+import ScrollAnimation from 'react-animate-on-scroll'
 Modal.setAppElement('#___gatsby')
 
 class IndexPage extends React.Component {
@@ -102,7 +104,10 @@ class IndexPage extends React.Component {
                     ref={toolbar => (this.toolbar = toolbar)}
                   />
 
-                  <ContactForm />
+                  <ContactForm
+                    env={this.props.env}
+                    closeModalRef={this.closeModal}
+                  />
                 </div>
               </section>
             </Modal>
@@ -110,14 +115,24 @@ class IndexPage extends React.Component {
             <Header modalState={this._handleShowModal} />
           </div>
 
-          <Skills />
-          <Ethos />
-          <SayHello />
+          <ScrollAnimation animateIn="fadeIn" delay={300}>
+            <Skills />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp" delay={300}>
+            <Ethos />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp" delay={400}>
+            <SayHello />
+          </ScrollAnimation>
 
-          <About />
-          <PortfolioDescription scrollTarget="portfolio" />
+          <ScrollAnimation animateIn="fadeInUp" delay={400}>
+            <About />
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft" delay={200}>
+            <PortfolioDescription scrollTarget="portfolio" />
+          </ScrollAnimation>
+
           <Projects />
-          <Footer timeout={this.state.timeout} />
         </div>
         {/* <div id="bg" /> */}
         {/* </div> */}

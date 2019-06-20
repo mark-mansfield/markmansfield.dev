@@ -4,6 +4,7 @@ module.exports = {
     author: 'Mark Mansfield',
     description: 'Mark Mansfield - web developer portfolio',
   },
+
   plugins: [
     'gatsby-plugin-react-helmet',
     {

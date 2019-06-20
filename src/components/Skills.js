@@ -1,5 +1,6 @@
 import React from 'react'
 import SimpleBanner from './presentation-components/simple-banner/SimpleBanner'
+
 const Skills = () => {
   return (
     <SimpleBanner

@@ -139,7 +139,9 @@
           border-bottom: 0;
 
           &:hover {
-            background-color: _palette(border-bg);
+            background-color: _palette(highlight);
+            color: _palette(fg-bold);
+            cursor: pointer;
           }
 
           &:active {
