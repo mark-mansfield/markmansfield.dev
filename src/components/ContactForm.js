@@ -70,13 +70,6 @@ class Contact extends React.PureComponent {
       textAlign: 'center',
       fontSize: '2rem',
     }
-    //make css loader size more responsive
-    let size = window.innerWidth
-    if (size > 2000) {
-      size = size * 0.05
-    } else if (size <= 414) {
-      size = size * 0.08
-    }
 
     return (
       <div className="container">
@@ -84,7 +77,7 @@ class Contact extends React.PureComponent {
         <div style={flexRow}>
           <GridLoader
             sizeUnit={'px'}
-            size={size}
+            size={50}
             color={'#bfbfbf'}
             loading={this.state.loading}
           />
