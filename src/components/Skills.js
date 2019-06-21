@@ -3,11 +3,26 @@ import SimpleBanner from './presentation-components/simple-banner/SimpleBanner'
 
 const Skills = () => {
   return (
-    <SimpleBanner
-      scrollTarget="skills"
-      title="Skills"
-      text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laudantium maxime obcaecati optio, eum placeat eaque ab unde. Beatae quibusdam, rerum ipsa voluptatum quam, totam animi aliquam doloribus consequatur ut quidem facilis dolore? Labore placeat tenetur ducimus. Nemo, animi sit.."
-    />
+    <SimpleBanner scrollTarget="skills" title="Skills">
+      <ul id="skills_list">
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        <li>typescript</li>
+        <li>angular</li>
+        <li>node</li>
+        <li>express</li>
+        <li>php</li>
+        <li>react</li>
+        <li>gatsby</li>
+        <li>github</li>
+        <li>mongodb</li>
+        <li>wordpress</li>
+        <li>mailchimp</li>
+        <li>photoshop</li>
+        <li>excel</li>
+      </ul>
+    </SimpleBanner>
   )
 }
 export default Skills
