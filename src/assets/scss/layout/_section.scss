@@ -294,8 +294,13 @@
       @include vendor('justify-content', 'center');
     }
     .simple-banner {
-      #skills_list {
+      min-height: 200px;
+      margin-top: -5%;
+      #skills_list,
+      .simple-banner-text {
         @include vendor('flex-wrap', 'wrap');
+        width: 90%;
+        margin: 50px 0;
       }
     }
     .ethos {

@@ -8,7 +8,7 @@ const projects = () => {
   return (
     <section id="section" className="container-full-width work ">
       <div className="projects">
-        <ScrollAnimation animateIn="fadeInUp" delay={300}>
+        <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
           <div className="project">
             <div className="description">
               <div className="title">
@@ -39,7 +39,7 @@ const projects = () => {
             <img src={project1} alt="project1" />
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={300}>
+        <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
           <div className="project">
             <div className="description">
               <div className="title">
@@ -69,7 +69,7 @@ const projects = () => {
             <img src={project2} alt="project2" />
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={300}>
+        <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
           <div className="project">
             <div className="description">
               <div className="title">
@@ -99,7 +99,7 @@ const projects = () => {
             <img src={project3} alt="project3" />
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={300}>
+        <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
           <div className="project">
             <div className="description">
               <div className="title">

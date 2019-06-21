@@ -12,7 +12,7 @@ class SimpleBanner extends React.Component {
         <div className="simple-banner">
           <div className="simple-banner-text">
             <h1>{this.props.title}</h1>
-            <p>{this.props.children}</p>
+            {this.props.children}
           </div>
         </div>
       </section>

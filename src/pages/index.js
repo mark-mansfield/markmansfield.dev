@@ -113,25 +113,25 @@ class IndexPage extends React.Component {
             <Header modalState={this._handleShowModal} />
           </div>
 
-          <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
             <Skills />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={800}>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={800}>
             <Ethos />
           </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeIn"
-            animateOnce="true"
-            duration="0.5"
+            animateOnce={true}
+            duration={0.5}
             delay={500}
           >
             <SayHello modalState={this._handleShowModal} />
           </ScrollAnimation>
 
-          <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={400}>
+          <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={400}>
             <About />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={200}>
+          <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
             <PortfolioDescription scrollTarget="portfolio" />
           </ScrollAnimation>
 
