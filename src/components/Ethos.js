@@ -15,12 +15,7 @@ const Ethos = () => {
           </li>
           <li>
             <i className="fas fa-wrench fa-3x" />
-            <p>
-              vs-code / google dev tools / sass / angular 6 / gatsby / react /
-              github
-              <br />
-              Status = much loved!
-            </p>
+            <p>vs-code / google dev tools / github</p>
           </li>
           <li>
             <i className="fas fa-ruler-combined fa-3x" />
