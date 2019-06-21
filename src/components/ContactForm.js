@@ -158,6 +158,9 @@ class Contact extends React.PureComponent {
                 )}
                 {this.state.formVisible && (
                   <form onSubmit={handleSubmit}>
+                    <h1>
+                      Get In touch with me here. I will get back to you ASAP
+                    </h1>
                     <label htmlFor="name" style={{ display: 'block' }}>
                       Name
                     </label>
