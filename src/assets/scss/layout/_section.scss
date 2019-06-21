@@ -50,14 +50,12 @@
     @include vendor('align-items', 'center');
     @include vendor('justify-content', 'center');
     width: 100%;
-    height: 400px;
+    min-height: 500px;
     background-color: #f8f8f8;
 
     -webkit-clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
     clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
 
-    // -webkit-clip-path: polygon(100% 7%, 100% 93%, 0 100%, 0 0);
-    // clip-path: polygon(100% 7%, 100% 93%, 0 100%, 6vw 100);
     margin-top: -3%;
   }
 
@@ -69,10 +67,46 @@
     width: 100%;
     h1 {
       text-align: center;
-      width: 65%;
     }
     p {
-      width: 70%;
+      @include vendor('display', 'flex');
+      @include vendor('flex-direction', 'row');
+      @include vendor('align-items', 'center');
+      @include vendor('justify-content', 'center');
+    }
+    ul {
+      @include vendor('display', 'flex');
+      @include vendor('flex-direction', 'row');
+      @include vendor('align-items', 'center');
+      @include vendor('justify-content', 'center');
+      @include vendor('flex-wrap', 'wrap');
+      width: 50%;
+      list-style-type: none;
+      li {
+        background: #eee;
+        margin: 6px 10px 6px 0;
+        border-radius: 15px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 15px;
+      }
+    }
+    a {
+      display: block;
+      width: 200px;
+      line-height: 2.75rem;
+      background-color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      border: 1px solid #ccc;
+      letter-spacing: 0.2rem;
+      font-size: 0.8rem;
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: darkcyan;
+      color: #ffffff;
+      cursor: pointer;
     }
   }
 
@@ -136,11 +170,11 @@
     @include vendor('align-items', 'center');
     @include vendor('justify-content', 'center');
     min-height: 300px;
-    background-color: rgb(3, 3, 3);
+    background-color: #1a1a1ad9;
     color: white;
 
-    // -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97.5%);
-    // clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97.5%);
+    -webkit-clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97.5%);
+    clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97.5%);
 
     margin-top: -2%;
     // margin-bottom: 2%;
@@ -148,7 +182,7 @@
     // clip-path: polygon(100% 0, 100% 100%, 0 93%, 0 7%);
     .ethos-list {
       margin-top: 40px;
-      margin-bottom: 40px;
+      margin-bottom: calc(40px + 2%);
       @include vendor('display', 'flex');
       @include vendor('flex-direction', 'row');
       @include vendor('align-items', 'start');
@@ -258,6 +292,11 @@
       @include vendor('flex-direction', 'column');
       @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
+    }
+    .simple-banner {
+      #skills_list {
+        @include vendor('flex-wrap', 'wrap');
+      }
     }
     .ethos {
       @include vendor('flex-direction', 'column');
