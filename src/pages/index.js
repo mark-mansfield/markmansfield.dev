@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Layout from '../components/layout'
-import axios from 'axios'
 import { MdClose } from 'react-icons/md'
 import Modal from 'react-modal'
 import 'animate.css/animate.min.css'
@@ -118,21 +116,22 @@ class IndexPage extends React.Component {
           <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={300}>
             <Skills />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={300}>
+          <ScrollAnimation animateIn="fadeIn" animateOnce="true" delay={800}>
             <Ethos />
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={400}>
-            <SayHello />
+          <ScrollAnimation
+            animateIn="fadeIn"
+            animateOnce="true"
+            duration="0.5"
+            delay={500}
+          >
+            <SayHello modalState={this._handleShowModal} />
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={400}>
             <About />
           </ScrollAnimation>
-          <ScrollAnimation
-            animateIn="fadeInLeft"
-            animateOnce="true"
-            delay={200}
-          >
+          <ScrollAnimation animateIn="fadeInUp" animateOnce="true" delay={200}>
             <PortfolioDescription scrollTarget="portfolio" />
           </ScrollAnimation>
 
