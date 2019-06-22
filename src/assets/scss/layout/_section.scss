@@ -287,6 +287,10 @@
 }
 // small breakpoint
 @include breakpoint(small) {
+  .aboveFoldHeight {
+    min-height: 600px;
+    margin-bottom: 3%;
+  }
   #section {
     .about-profile-layout {
       @include vendor('flex-direction', 'column');

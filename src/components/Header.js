@@ -56,7 +56,7 @@ class Header extends React.Component {
             </li>
             <li>
               <Scroll type="class" element="about_me">
-                <a>About</a>
+                <a>about</a>
               </Scroll>
             </li>
             <li>
