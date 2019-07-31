@@ -91,7 +91,9 @@ const projects = () => {
                 </p>
               </div>
               <div className="toolbar">
-                <button>View project</button>
+                <a href="https://mark-mansfield.github.io/portfolio-static-website/">
+                  View project
+                </a>
                 <button>GIT HUB</button>
               </div>
               <img src={project3} alt="project3" />

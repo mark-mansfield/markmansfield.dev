@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
-import emailjs from 'emailjs-com'
+// import emailjs from 'emailjs-com'
 import '../assets/scss/main.scss'
 
 const Layout = ({ children, location }) => {

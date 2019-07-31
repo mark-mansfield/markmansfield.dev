@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import Scroll from './Scroll'
 class Header extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class Header extends React.Component {
           <div className="inner">
             <h1>Mark Mansfield</h1>
             <p>Front-end Developer - Sydney</p>
-            <div />
+
             <div className="contact-layout">
               <a
                 href="https://www.linkedin.com/in/mark-mansfield-20128837/"
