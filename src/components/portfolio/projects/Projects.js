@@ -1,7 +1,7 @@
 import React from 'react'
 import project1 from '../../../images/portfoli-dummy-image-1.jpg'
 import project2 from '../../../images/portfoli-dummy-image-2.jpg'
-import project3 from '../../../images/portfoli-dummy-image-3.jpg'
+import project3 from '../../../images/static-web-combo.png'
 import project4 from '../../../images/portfoli-dummy-image-4.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
 const projects = () => {
