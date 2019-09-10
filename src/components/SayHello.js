@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleBanner from '../components/presentation-components/simple-banner/SimpleBanner'
+import SimpleBanner from './presentation-components/angled-banner/AngledBanner'
 import ScrollAnimation from 'react-animate-on-scroll'
 class SayHello extends React.Component {
   render() {

@@ -14,9 +14,6 @@ import Scroll from '../components/Scroll'
 import Header from '../components/Header'
 import SayHello from '../components/SayHello'
 import About from '../components/About'
-import Ethos from '../components/Ethos'
-import Skills from '../components/Skills'
-import PortfolioDescription from '../components/portfolio/description/Description'
 import Projects from '../components/portfolio/projects/Projects'
 import ContactForm from '../components/ContactForm'
 import SubNav from '../components/sub__nav'
@@ -98,12 +95,12 @@ class IndexPage extends React.Component {
     const sideList = (
       <div className={classes.list}>
         <List>
-          <Scroll type="class" element="skills">
-            <ListItem button key="skills" style={{ textAlign: 'center' }}>
-              <ListItemText primary="Skills" />
+          <Scroll type="class" element="about_me">
+            <ListItem button key="about" style={{ textAlign: 'center' }}>
+              <ListItemText primary="About Mark" />
             </ListItem>
           </Scroll>
-          <Scroll type="class" element="portfolio">
+          <Scroll type="class" element="projects">
             <ListItem button key="portfolio" style={{ textAlign: 'center' }}>
               <ListItemText primary="portfolio" />
             </ListItem>
@@ -112,12 +109,6 @@ class IndexPage extends React.Component {
           <ListItem button key="contact" style={{ textAlign: 'center' }}>
             <ListItemText primary="Contact" onClick={this._handleShowModal} />
           </ListItem>
-
-          <Scroll type="class" element="about_me">
-            <ListItem button key="about" style={{ textAlign: 'center' }}>
-              <ListItemText primary="About Mark" />
-            </ListItem>
-          </Scroll>
         </List>
         <Divider />
         <List>
@@ -231,12 +222,6 @@ class IndexPage extends React.Component {
 
           <SubNav sticky={this.state.stickySubNav} />
 
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={300}>
-            <Skills />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={800}>
-            <Ethos />
-          </ScrollAnimation>
           <ScrollAnimation
             animateIn="fadeIn"
             animateOnce={true}
@@ -248,9 +233,6 @@ class IndexPage extends React.Component {
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={400}>
             <About />
-          </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={200}>
-            <PortfolioDescription scrollTarget="portfolio" />
           </ScrollAnimation>
 
           <Projects />

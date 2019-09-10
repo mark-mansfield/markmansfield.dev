@@ -8,7 +8,26 @@ const projects = () => {
   return (
     <section id="section" className="container-full-width work ">
       <div className="projects">
+        <br />
+        <br />
         <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
+          <div
+            style={{
+              width: '100%',
+              textAlign: 'center',
+              margin: '20px 0',
+              padding: '20px',
+              backgroundColor: '#f8f8f8',
+            }}
+          >
+            <h1>Portfolio</h1>
+            Below you can see some projects I've been working on lately.
+            <br />
+            As I am starting out all of these projects are either
+            <br />
+            non paid or fictitious projects.
+          </div>
+
           <div className="project">
             <div className="description">
               <div className="title">

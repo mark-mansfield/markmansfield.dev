@@ -15,23 +15,16 @@ class StickyNav extends React.Component {
         className={this.props.sticky ? 'alt  animated fadeInDown' : 'hidden'}
       >
         <div>
-          <Scroll type="class" element="skills">
-            <a className="simple-a">
-              <small>skills</small>
-            </a>
-          </Scroll>
-        </div>
-        <div>
-          <Scroll type="class" element="portfolio">
-            <a className="simple-a">
-              <small>portfolio</small>
-            </a>
-          </Scroll>
-        </div>
-        <div>
           <Scroll type="class" element="about_me">
             <a className="simple-a">
               <small>about</small>
+            </a>
+          </Scroll>
+        </div>
+        <div>
+          <Scroll type="class" element="projects">
+            <a className="simple-a">
+              <small>portfolio</small>
             </a>
           </Scroll>
         </div>

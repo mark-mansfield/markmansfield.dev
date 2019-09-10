@@ -45,20 +45,16 @@ class Header extends React.Component {
         <nav>
           <ul>
             <li>
-              <Scroll type="class" element="skills">
-                <a>skills</a>
-              </Scroll>
-            </li>
-            <li>
-              <Scroll type="class" element="portfolio">
-                <a>portfolio</a>
-              </Scroll>
-            </li>
-            <li>
               <Scroll type="class" element="about_me">
                 <a>about</a>
               </Scroll>
             </li>
+            <li>
+              <Scroll type="class" element="projects">
+                <a>portfolio</a>
+              </Scroll>
+            </li>
+
             <li>
               <a onClick={this.props.modalState.bind(this)}>Contact</a>
             </li>

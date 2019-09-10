@@ -1,5 +1,5 @@
 import React from 'react'
-class SimpleBanner extends React.Component {
+class AngledBanner extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -9,13 +9,15 @@ class SimpleBanner extends React.Component {
         id="section"
         className={this.props.scrollTarget + ' container-full-width'}
       >
-        <div className="simple-banner">
-          <h1>{this.props.title}</h1>
-          {this.props.children}
+        <div className="angled-banner">
+          <div className="angled-banner-text">
+            <h1>{this.props.title}</h1>
+            {this.props.children}
+          </div>
         </div>
       </section>
     )
   }
 }
 
-export default SimpleBanner
+export default AngledBanner
