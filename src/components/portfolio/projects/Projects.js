@@ -23,9 +23,7 @@ const projects = () => {
             <h1>Portfolio</h1>
             Below you can see some projects I've been working on lately.
             <br />
-            As I am starting out all of these projects are either
-            <br />
-            non paid or fictitious projects.
+            As I am starting out all of these projects personal projects.
           </div>
 
           <div className="project">

@@ -8,9 +8,7 @@ const PortfolioDescription = props => {
         <p>
           Below you can see some projects I've been working on lately.
           <br />
-          As I am starting out all of these projects are either
-          <br />
-          non paid or fictitious projects.
+          As I am starting out all of these projects are personal projects
         </p>
       </ScrollAnimation>
     </SimpleBanner>
