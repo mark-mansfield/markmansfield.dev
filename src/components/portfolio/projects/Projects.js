@@ -54,7 +54,7 @@ const projects = () => {
                   href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
                   alt="link to project"
                   title="link to project"
-                  target="new"
+                  target="_blank"
                 >
                   View project
                 </a>
@@ -64,7 +64,7 @@ const projects = () => {
                   href="https://github.com/mark-mansfield/food-cost.io"
                   alt="link to git hub"
                   title="link to git hub"
-                  target="new"
+                  target="_blank"
                 >
                   GIT HUB
                 </a>
@@ -101,7 +101,7 @@ const projects = () => {
                   href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
                   alt="link to project"
                   title="link to project"
-                  target="new"
+                  target="_blank"
                 >
                   View Project
                 </a>
@@ -111,7 +111,7 @@ const projects = () => {
                   href="https://github.com/mark-mansfield/orders-io"
                   alt="link to git hub"
                   title="link to git hub"
-                  target="new"
+                  target="_blank"
                 >
                   GIT HUB
                 </a>
@@ -140,7 +140,7 @@ const projects = () => {
                   href="https://mark-mansfield.github.io/portfolio-static-website/"
                   alt="link to project"
                   title="link to project"
-                  target="new"
+                  target="_blank"
                 >
                   View Project
                 </a>
@@ -150,7 +150,7 @@ const projects = () => {
                   href="https://github.com/mark-mansfield/portfolio-static-website"
                   alt="link to git hub"
                   title="link to git hub"
-                  target="new"
+                  target="_blank"
                 >
                   Git Hub
                 </a>
