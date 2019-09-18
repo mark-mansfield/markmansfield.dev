@@ -29,7 +29,7 @@ class StickyNav extends React.Component {
           </Scroll>
         </div>
         <div onClick={this.props.modalState.bind(this)}>
-          <a className="simple-a">Contact</a>
+          <a className="simple-a">contact</a>
         </div>
       </div>
     )

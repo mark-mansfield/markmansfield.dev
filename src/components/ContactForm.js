@@ -22,6 +22,7 @@ class Contact extends React.PureComponent {
   }
   // notify = msg => toast(msg)
   notify = statusCode => {
+    console.log(statusCode)
     if (statusCode === 1) {
       this.setState({ emailSent: true })
       this.setState({ loading: false })
@@ -117,12 +118,10 @@ class Contact extends React.PureComponent {
               <div style={{ flexRow }}>
                 {this.state.emailSent && (
                   <div>
-                    <ScrollAnimation animateIn="fadeInUp" delay={100}>
-                      <h1>
-                        Your email is on its way! I look forward to discussing
-                        any opportunities with you
-                      </h1>
-                    </ScrollAnimation>
+                    <h1>
+                      Your email is on its way! I look forward to discussing any
+                      opportunities with you
+                    </h1>
                   </div>
                 )}
 
@@ -159,7 +158,7 @@ class Contact extends React.PureComponent {
                 {this.state.formVisible && (
                   <form onSubmit={handleSubmit}>
                     <h1>
-                      Get In touch with me here. I will get back to you ASAP
+                      Get in touch with me here. I will get back to you ASAP
                     </h1>
                     <label htmlFor="name" style={{ display: 'block' }}>
                       Name
