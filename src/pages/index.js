@@ -220,7 +220,10 @@ class IndexPage extends React.Component {
             sideDrawerState={this.toggleDrawer}
           />
 
-          <SubNav sticky={this.state.stickySubNav} />
+          <SubNav
+            sticky={this.state.stickySubNav}
+            modalState={this._handleShowModal}
+          />
 
           <ScrollAnimation
             animateIn="fadeIn"
