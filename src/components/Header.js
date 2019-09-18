@@ -30,15 +30,6 @@ class Header extends React.Component {
               >
                 <i className="fab fa-github fa-2x icon" />
               </a>
-
-              <a
-                href="https://www.facebook.com/mmansfield"
-                alt="marks facebook page"
-                target="new"
-                title="contact me via this platform"
-              >
-                <i className="fab fa-facebook fa-2x icon" />
-              </a>
             </div>
           </div>
         </div>

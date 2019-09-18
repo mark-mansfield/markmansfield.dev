@@ -31,6 +31,32 @@ class StickyNav extends React.Component {
         <div onClick={this.props.modalState.bind(this)}>
           <a className="simple-a">contact</a>
         </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/mark-mansfield-20128837/"
+            target="new"
+            alt="visit my linked in profile"
+            title="visit my linked in profile"
+            style={{ marginLeft: '20px' }}
+          >
+            <i
+              class="fab fa-linkedin-in fa-1x icon"
+              style={{ color: 'dodgerBlue' }}
+            />
+          </a>
+          <a
+            href=" https://github.com/mark-mansfield"
+            target="new"
+            alt="visit my github profile"
+            title="visit my github profile"
+            style={{ marginLeft: '20px' }}
+          >
+            <i
+              class="fab fa-github fa-1x icon"
+              style={{ color: 'dodgerBlue' }}
+            />
+          </a>
+        </div>
       </div>
     )
   }

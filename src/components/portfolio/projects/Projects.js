@@ -1,6 +1,6 @@
 import React from 'react'
-import project1 from '../../../images/portfoli-dummy-image-1.jpg'
-import project2 from '../../../images/portfoli-dummy-image-2.jpg'
+import project1 from '../../../images/food-cost-io.png'
+import project2 from '../../../images/order-io.png'
 import project3 from '../../../images/static-web-combo.png'
 import project4 from '../../../images/portfoli-dummy-image-4.jpg'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -29,27 +29,45 @@ const projects = () => {
           <div className="project">
             <div className="description">
               <div className="title">
-                <h1>FoodCosts.io</h1>
+                <h1>food-costs.io</h1>
                 <small>personal project</small>
               </div>
               <div className="project-type">
                 <small>angular / node.js / express / mongodb</small>
               </div>
-
+              <br />
               <div className="project-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
-                  dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
-                  repellat velit assumenda molestiae, ratione officia voluptate
-                  natus ut asperiores dicta ducimus sapiente mollitia
-                  accusantium adipisci? Fuga minima possimus omnis beatae
-                  soluta, quos labore!
+                  The Problem: It takes a lot of time to gather data for costing
+                  a menu. There is no office space usually perform this work in
+                  a restaurant. Chefs need instant access to all their costings.
+                  Paperless solutions are a necessity.
+                </p>
+                <p>
+                  Solution: Web app delivering features for detailed data
+                  gathering, food costing, menu management.
                 </p>
               </div>
               <div className="toolbar">
-                <button>View project</button>
-                <button>GIT HUB</button>
+                <a
+                  className="button"
+                  href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
+                  alt="link to project"
+                  title="link to project"
+                  target="new"
+                >
+                  View project
+                </a>
+
+                <a
+                  className="button"
+                  href="https://github.com/mark-mansfield/food-cost.io"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="new"
+                >
+                  GIT HUB
+                </a>
               </div>
               <img src={project1} alt="project1" />
             </div>
@@ -60,26 +78,43 @@ const projects = () => {
           <div className="project">
             <div className="description">
               <div className="title">
-                <h1>catering.io</h1>
+                <h1>orders.io</h1>
                 <small>personal project</small>
               </div>
               <div className="project-type">
-                <small>gatsby / react / node / webpack</small>
+                <small>angular / node.js / express / mongodb</small>
               </div>
               <div className="project-text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
-                  dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
-                  repellat velit assumenda molestiae, ratione officia voluptate
-                  natus ut asperiores dicta ducimus sapiente mollitia
-                  accusantium adipisci? Fuga minima possimus omnis beatae
-                  soluta, quos labore!
+                  The Problem: Back of house tools for catering management to
+                  order production in small businesses are limited, time
+                  consuming and error prone.
+                </p>
+                <p>
+                  Solution: Web app delivering features for order creation, and
+                  building production run-sheets in a paperless way.
                 </p>
               </div>
               <div className="toolbar">
-                <button>View project</button>
-                <button>GIT HUB</button>
+                <a
+                  className="button"
+                  href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
+                  alt="link to project"
+                  title="link to project"
+                  target="new"
+                >
+                  View Project
+                </a>
+                {/* https://github.com/mark-mansfield/orders-io */}
+                <a
+                  className="button"
+                  href="https://github.com/mark-mansfield/orders-io"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="new"
+                >
+                  GIT HUB
+                </a>
               </div>
               <img src={project2} alt="project2" />
             </div>
@@ -90,35 +125,42 @@ const projects = () => {
           <div className="project">
             <div className="description">
               <div className="title">
-                <h1>Brown Sugar</h1>
+                <h1>static website</h1>
                 <small>fictitious static website project</small>
               </div>
               <div className="project-type">
                 <small>gatsby / react / node / webpack</small>
               </div>
               <div className="project-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
-                  dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
-                  repellat velit assumenda molestiae, ratione officia voluptate
-                  natus ut asperiores dicta ducimus sapiente mollitia
-                  accusantium adipisci? Fuga minima possimus omnis beatae
-                  soluta, quos labore!
-                </p>
+                <p>An example of a static website built for a restaurant.</p>
               </div>
               <div className="toolbar">
-                <a href="https://mark-mansfield.github.io/portfolio-static-website/">
-                  View project
+                <a
+                  className="button"
+                  href="https://mark-mansfield.github.io/portfolio-static-website/"
+                  alt="link to project"
+                  title="link to project"
+                  target="new"
+                >
+                  View Project
                 </a>
-                <button>GIT HUB</button>
+                {/* https://github.com/mark-mansfield/portfolio-static-website */}
+                <a
+                  className="button"
+                  href="https://github.com/mark-mansfield/portfolio-static-website"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="new"
+                >
+                  Git Hub
+                </a>
               </div>
               <img src={project3} alt="project3" />
             </div>
             <img src={project3} alt="project3" />
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
+        {/* <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
           <div className="project">
             <div className="description">
               <div className="title">
@@ -147,7 +189,7 @@ const projects = () => {
             </div>
             <img src={project3} alt="project3" />
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
     </section>
   )
