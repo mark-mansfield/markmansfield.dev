@@ -51,7 +51,7 @@ const projects = () => {
               <div className="toolbar">
                 <a
                   className="button"
-                  href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
+                  href="http://food.cost.io.s3-website-ap-southeast-2.amazonaws.com/login"
                   alt="link to project"
                   title="link to project"
                   target="_blank"
@@ -61,7 +61,7 @@ const projects = () => {
 
                 <a
                   className="button"
-                  href="https://github.com/mark-mansfield/food-cost.io"
+                  href="https://github.com/mark-mansfield/food-cost.io/tree/develop"
                   alt="link to git hub"
                   title="link to git hub"
                   target="_blank"
@@ -98,7 +98,7 @@ const projects = () => {
               <div className="toolbar">
                 <a
                   className="button"
-                  href="http://food-cost-io.s3-website-ap-southeast-2.amazonaws.com/login"
+                  href="http://orders-project.s3-website-ap-southeast-2.amazonaws.com/login"
                   alt="link to project"
                   title="link to project"
                   target="_blank"
@@ -108,7 +108,7 @@ const projects = () => {
                 {/* https://github.com/mark-mansfield/orders-io */}
                 <a
                   className="button"
-                  href="https://github.com/mark-mansfield/orders-io"
+                  href="https://github.com/mark-mansfield/orders-io/tree/develop"
                   alt="link to git hub"
                   title="link to git hub"
                   target="_blank"
@@ -129,7 +129,7 @@ const projects = () => {
                 <small>fictitious static website project</small>
               </div>
               <div className="project-type">
-                <small>gatsby / react / node / webpack</small>
+                <small>gatsby / react </small>
               </div>
               <div className="project-text">
                 <p>An example of a static website built for a restaurant.</p>
@@ -147,7 +147,7 @@ const projects = () => {
                 {/* https://github.com/mark-mansfield/portfolio-static-website */}
                 <a
                   className="button"
-                  href="https://github.com/mark-mansfield/portfolio-static-website"
+                  href="https://github.com/mark-mansfield/portfolio-static-website/tree/develop"
                   alt="link to git hub"
                   title="link to git hub"
                   target="_blank"

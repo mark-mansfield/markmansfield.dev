@@ -40,7 +40,7 @@ class StickyNav extends React.Component {
             style={{ marginLeft: '20px' }}
           >
             <i
-              class="fab fa-linkedin-in fa-1x icon"
+              className="fab fa-linkedin-in fa-1x icon"
               style={{ color: 'dodgerBlue' }}
             />
           </a>
@@ -52,7 +52,7 @@ class StickyNav extends React.Component {
             style={{ marginLeft: '20px' }}
           >
             <i
-              class="fab fa-github fa-1x icon"
+              className="fab fa-github fa-1x icon"
               style={{ color: 'dodgerBlue' }}
             />
           </a>

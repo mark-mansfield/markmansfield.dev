@@ -39,12 +39,23 @@ const About = () => {
         <div className="about-profile-layout">
           <div className="about-profile-img">
             <div>
-              <img style={{ width: '400px' }} src={mark} />
+              <img style={{ width: '100%' }} src={mark} />
             </div>
             <div>
               I'm a Front-End Developer located in Bondi Beach Sydney Australia.
               I have serious passion for creating intuitive, dynamic user
               experiences. Let's make something special.
+              <br />
+              <br />
+              <a
+                className="button"
+                href="https://drive.google.com/file/d/1yqEJgbRlkhsKLB7oIBT8VMuqvCNDFK7S/view"
+                alt="link my current cv"
+                title="link to my current cv"
+                target="_blank"
+              >
+                checkout my cv here
+              </a>
             </div>
           </div>
 

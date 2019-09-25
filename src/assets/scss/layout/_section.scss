@@ -27,7 +27,7 @@
 
   .section-container {
     margin: 10% 0;
-    width: 100%;
+    width: 90%;
   }
 
   .about-profile-layout {
@@ -50,7 +50,7 @@
       @include vendor('display', 'flex');
       @include vendor('flex-direction', 'row');
       @include vendor('align-items', 'center');
-      @include vendor('justify-content', 'center');
+      @include vendor('justify-content', 'flex-end');
       @include vendor('flex-wrap', 'wrap');
       list-style-type: none;
       li {
@@ -186,7 +186,7 @@
         }
       }
       img {
-        width: 40%;
+        max-width: 30%;
         margin: 6rem;
       }
     }
@@ -308,6 +308,9 @@
         width: 90%;
         margin: 50px 0;
       }
+    }
+    .about-profile-img {
+      width: 300px;
     }
 
     .ethos-list {
