@@ -2,7 +2,7 @@ import React from 'react'
 import project1 from '../../../images/food-cost-io.png'
 import project2 from '../../../images/order-io.png'
 import project3 from '../../../images/static-web-combo.png'
-import project4 from '../../../images/portfoli-dummy-image-4.jpg'
+import project4 from '../../../images/calorie-counter-react.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 const projects = () => {
   return (
@@ -24,6 +24,57 @@ const projects = () => {
             Below you can see some projects I've been working on lately.
             <br />
             As I am starting out all of these projects are personal projects.
+          </div>
+
+          <div className="project">
+            <div className="description">
+              <div className="title">
+                <h1>React Calorie Counter</h1>
+                <small>Assessment project</small>
+              </div>
+              <div className="project-type">
+                <small>react / nutrition-ix API</small>
+              </div>
+              <br />
+              <div className="project-text">
+                <p>
+                  A small calorie calculator using react, integrating with the
+                  nutritionix api.
+                </p>
+                <p>
+                  <a
+                    href="https://www.nutritionix.com"
+                    alt="nutritionix"
+                    title="nutritionix"
+                  >
+                    nutritionix
+                  </a>
+                </p>
+              </div>
+              <div className="toolbar">
+                <a
+                  className="button"
+                  href="https://mark-mansfield.github.io/react-calorie-calculator/"
+                  alt="link to project"
+                  title="link to project"
+                  target="_blank"
+                >
+                  View project
+                </a>
+
+                <a
+                  className="button"
+                  href="https://github.com/mark-mansfield/react-calorie-calculator"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="_blank"
+                >
+                  GIT HUB
+                </a>
+              </div>
+              <img src={project4} alt="project1" />
+            </div>
+            <img src={project4} alt="project1" />
           </div>
 
           <div className="project">
