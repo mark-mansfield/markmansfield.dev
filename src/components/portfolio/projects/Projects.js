@@ -22,8 +22,6 @@ const projects = () => {
           >
             <h1>Portfolio</h1>
             Below you can see some projects I've been working on lately.
-            <br />
-            As I am starting out all of these projects are personal projects.
           </div>
 
           <div className="project">
