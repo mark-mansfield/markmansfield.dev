@@ -164,6 +164,15 @@ const projects = () => {
                 >
                   GIT HUB
                 </a>
+                <a
+                  className="button"
+                  href="https://trello.com/b/uBxKUMdE/orders-project"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="_blank"
+                >
+                  Trello Board
+                </a>
               </div>
               <img src={project2} alt="project2" />
             </div>
@@ -203,42 +212,21 @@ const projects = () => {
                 >
                   Git Hub
                 </a>
+                <a
+                  className="button"
+                  href="https://trello.com/b/ZpzyzuFj/brown-sugar-website"
+                  alt="link to git hub"
+                  title="link to git hub"
+                  target="_blank"
+                >
+                  Trello Board
+                </a>
               </div>
               <img src={project3} alt="project3" />
             </div>
             <img src={project3} alt="project3" />
           </div>
         </ScrollAnimation>
-        {/* <ScrollAnimation animateIn="fadeInUp" delay={300} animateOnce={true}>
-          <div className="project">
-            <div className="description">
-              <div className="title">
-                <h1>SharkData</h1>
-                <small>ficticious project</small>
-              </div>
-              <div className="project-type">
-                <small>angular / node / express / mongoDb</small>
-              </div>
-              <div className="project-text">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias nesciunt molestiae deleniti iste! Nemo ducimus a
-                  dicta, deleniti est adipisci ab ipsa. Eaque suscipit enim, sit
-                  repellat velit assumenda molestiae, ratione officia voluptate
-                  natus ut asperiores dicta ducimus sapiente mollitia
-                  accusantium adipisci? Fuga minima possimus omnis beatae
-                  soluta, quos labore!
-                </p>
-              </div>
-              <div className="toolbar">
-                <button>View project</button>
-                <button>GIT HUB</button>
-              </div>
-              <img src={project3} alt="project3" />
-            </div>
-            <img src={project3} alt="project3" />
-          </div>
-        </ScrollAnimation> */}
       </div>
     </section>
   )
