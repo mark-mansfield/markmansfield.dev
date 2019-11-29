@@ -66,6 +66,7 @@ const projects = () => {
             <div className="project-details">
               <div className="project-image">
                 <img
+                  className="react-calorie-image"
                   src={project4}
                   alt="react calorie calculator"
                   style={
