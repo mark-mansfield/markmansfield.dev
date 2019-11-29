@@ -23,6 +23,9 @@ import Hamburger from '../components/hamburgerButton'
 import ScrollAnimation from 'react-animate-on-scroll'
 Modal.setAppElement('#___gatsby')
 const drawStyles = {
+  root: {
+    background: '#ccc',
+  },
   list: {
     width: 250,
   },
@@ -97,12 +100,12 @@ class IndexPage extends React.Component {
         <List>
           <Scroll type="class" element="about_me">
             <ListItem button key="about" style={{ textAlign: 'center' }}>
-              <ListItemText primary="About Mark" />
+              <ListItemText primary="About Me" />
             </ListItem>
           </Scroll>
           <Scroll type="class" element="projects">
             <ListItem button key="portfolio" style={{ textAlign: 'center' }}>
-              <ListItemText primary="portfolio" />
+              <ListItemText primary="Projects" />
             </ListItem>
           </Scroll>
 
@@ -185,7 +188,7 @@ class IndexPage extends React.Component {
                   height: '100%',
                 }}
               >
-                <div style={{ width: '50%' }}>
+                <div className="modal">
                   <div
                     className="modal__toolbar"
                     ref={toolbar => (this.toolbar = toolbar)}
@@ -225,16 +228,16 @@ class IndexPage extends React.Component {
             modalState={this._handleShowModal}
           />
 
-          <ScrollAnimation
+          {/* <ScrollAnimation
             animateIn="fadeIn"
             animateOnce={true}
             duration={0.5}
             delay={500}
           >
             <SayHello modalState={this._handleShowModal} />
-          </ScrollAnimation>
+          </ScrollAnimation> */}
 
-          <ScrollAnimation animateIn="fadeInUp" animateOnce={true} delay={400}>
+          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
             <About />
           </ScrollAnimation>
 

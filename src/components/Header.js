@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Scroll from './Scroll'
 class Header extends React.Component {
   render() {
@@ -36,18 +35,19 @@ class Header extends React.Component {
         <nav>
           <ul>
             <li>
-              <Scroll type="class" element="about_me">
-                <a>about</a>
-              </Scroll>
-            </li>
-            <li>
               <Scroll type="class" element="projects">
-                <a>portfolio</a>
+                <a className="button">projects</a>
+              </Scroll>
+            </li>{' '}
+            <li>
+              <Scroll type="class" element="about_me">
+                <a className="button">about</a>
               </Scroll>
             </li>
-
             <li>
-              <a onClick={this.props.modalState.bind(this)}>Contact</a>
+              <a className="button" onClick={this.props.modalState.bind(this)}>
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

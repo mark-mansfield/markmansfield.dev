@@ -24,7 +24,7 @@ class StickyNav extends React.Component {
         <div>
           <Scroll type="class" element="projects">
             <a className="simple-a">
-              <small>portfolio</small>
+              <small>projects</small>
             </a>
           </Scroll>
         </div>

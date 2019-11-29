@@ -1,12 +1,17 @@
 /* Section */
+
 #section {
   color: black;
   width: 100vw;
   background-color: white;
   @include vendor('display', 'flex');
-  @include vendor('flex-direction', 'row');
+  @include vendor('flex-direction', 'column');
   @include vendor('align-items', 'center');
   @include vendor('justify-content', 'center');
+
+  .modal {
+    width: 50%;
+  }
 
   h1,
   h2 {
@@ -26,7 +31,7 @@
   }
 
   .section-container {
-    margin: 10% 0;
+    margin: 60px 0;
     width: 90%;
   }
 
@@ -34,30 +39,53 @@
     @include vendor('display', 'flex');
     @include vendor('justify-content', 'space-between');
     width: 100%;
-    margin-top: 100px;
+    margin: 100 0;
+    margin-top: 50px;
   }
 
-  .about-profile-img {
+  .about-profile-img-container {
+    @include vendor('display', 'flex');
+    @include vendor('flex-direction', 'column');
+    @include vendor('justify-content', 'center');
+  }
+
+  .about-profile-img-container > img {
+    border-radius: 10px;
+    border: 1px solid rgb(227, 227, 227);
     width: 400px;
+    margin-bottom: 50px;
+  }
+
+  .about-profile-text {
+    text-align: left;
+    margin: 0 40px;
+
+    a:hover {
+      background-color: _palette(highlight);
+    }
   }
 
   .skills-container {
-    width: 700px;
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .skills_list {
+    width: 70%;
     ul {
       @include vendor('display', 'flex');
       @include vendor('flex-direction', 'row');
       @include vendor('align-items', 'center');
-      @include vendor('justify-content', 'flex-end');
+      @include vendor('justify-content', 'flex-start');
       @include vendor('flex-wrap', 'wrap');
       list-style-type: none;
       li {
-        background: #000;
-        color: white;
+        background: #f5f5f5;
+        color: black;
         margin: 6px 10px 6px 0;
-        border-radius: 15px;
+        // border-radius: 15px;
         height: 30px;
         line-height: 30px;
         padding: 0 15px;
@@ -72,7 +100,7 @@
     @include vendor('justify-content', 'center');
     width: 100%;
     min-height: 500px;
-    background-color: #f8f8f8;
+    // background-color: #f8f8f8;
     -webkit-clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
     clip-path: polygon(0 0, 100% 5%, 100% 94%, 0% 100%);
     margin-top: -3%;
@@ -103,7 +131,8 @@
       display: block;
       width: 200px;
       line-height: 2.75rem;
-      background-color: #ffffff;
+      background-color: #fa12e3;
+      color: white;
       text-transform: uppercase;
       text-align: center;
       border: 1px solid #ccc;
@@ -112,7 +141,7 @@
       border-radius: 5px;
     }
     a:hover {
-      background-color: darkcyan;
+      background-color: _palette(highlight);
       color: #ffffff;
       cursor: pointer;
     }
@@ -123,72 +152,97 @@
     @include vendor('flex-direction', 'column');
     @include vendor('align-items', 'center');
     @include vendor('justify-content', 'center');
-
+    width: 100%;
     .project {
       @include vendor('display', 'flex');
-      @include vendor('flex-direction', 'row');
-      @include vendor('align-items', 'flex-start');
+      @include vendor('flex-direction', 'column');
+      @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
-      width: 100%;
+      margin: 20px 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 1200px;
       border-bottom: 1px solid rgba(227, 226, 226, 0.424);
-      .project-type {
-        background-color: grey;
-        color: white;
-        padding: 10px;
+
+      .description {
+        width: 500px;
+        margin-top: 50px;
+        padding: 15px;
+        order: 2;
+      }
+
+      h1 {
+        margin-bottom: 0;
+      }
+
+      .project-details {
+        @include vendor('display', 'flex');
+        @include vendor('justify-content', 'space-between');
+      }
+
+      .project-title {
+        text-align: center;
+        flex-grow: 3;
       }
 
       .description {
+        margin-top: 50px;
+        padding: 15px;
+        order: 2;
+      }
+
+      .project-image {
+        width: 100%;
+        order: 1;
+      }
+
+      .project-image > img {
+        width: 500px;
+        position: relative;
+      }
+
+      // .project-image:first-of-type > img {
+      //   margin-top: 60px;
+      //   width: 420px;
+      //   margin-right: 40px;
+      // }
+
+      .toolbar {
         @include vendor('display', 'flex');
         @include vendor('flex-direction', 'column');
         @include vendor('align-items', 'flex-start');
         @include vendor('justify-content', 'center');
-        width: 20%;
-        margin: 6rem 0;
-        h1 {
-          margin-bottom: 0;
+        @include vendor('flex-grow', '1');
+        order: 5;
+        width: 100%;
+        button,
+        a {
+          background-color: _palette(fg-accent);
+          padding: 0 1.25rem 0 1.35rem;
+          color: black;
+          font-family: system-ui;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          letter-spacing: 0.2rem;
+          display: flex;
+          width: 300px;
+          align-items: center;
         }
-        hr {
-          width: 30%;
-          margin: 1.875em 0;
-          background-color: #c5c5c5;
-          height: 0.0625em;
-          border: none;
-        }
-        img {
-          display: none;
-        }
-        .toolbar {
-          @include vendor('display', 'flex');
-          @include vendor('flex-direction', 'row');
-          @include vendor('align-items', 'center');
-          @include vendor('justify-content', 'center');
-          button,
-          a {
-            background-color: _palette(fg-accent) !important;
-            padding: 0 1.25rem 0 1.35rem;
-            color: black;
+        button:hover,
+        a.button:hover {
+          background-color: _palette(highlight);
 
-            font-family: system-ui;
-            font-weight: 300;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 0.2rem;
-            display: flex;
-            align-items: center;
-          }
-          button:hover,
-          a:hover {
-            background-color: darkcyan !important;
-
-            color: black !important;
-            cursor: pointer;
-          }
+          color: black !important;
+          cursor: pointer;
         }
       }
-      img {
-        max-width: 30%;
-        margin: 6rem;
-      }
+    }
+
+    .project:after {
+      content: '';
+      margin: 20px 0;
+      border: 0.5px solid grey;
     }
   }
 
@@ -196,15 +250,18 @@
     list-style: none;
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'row');
-    @include vendor('align-items', 'center');
+    @include vendor('align-items', 'flex-start');
     @include vendor('justify-content', 'center');
     li {
       @include vendor('flex-direction', 'row');
       @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
       text-align: 'center';
-      width: 290px;
+      width: 300px;
       padding: 10px;
+      i:before {
+        color: #4f4f4f;
+      }
     }
   }
 }
@@ -224,14 +281,19 @@
 // medium break point
 @include breakpoint(medium) {
   #section {
-    .container-partial-width {
-      max-width: 90%;
-    }
+    // .container-partial-width {
+    //   max-width: 100%;
+    // }
+
     .about-profile-layout {
+      @include vendor('display', 'flex');
       @include vendor('flex-direction', 'column');
       @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
       @include vendor('flex-direction', 'column-reverse');
+      img {
+        margin-top: 60px;
+      }
     }
 
     .skills_list {
@@ -239,47 +301,44 @@
     }
 
     .banner {
-      background-color: red;
       width: 100%;
     }
 
     .projects {
+      width: 80vw;
       .project {
-        @include vendor('flex-direction', 'column');
+        @include vendor('display', 'flex');
+        @include vendor('flex-flow', 'column');
         @include vendor('align-items', 'center');
-        @include vendor('justify-content', 'center');
+        width: 100%;
+        .project-details {
+          margin-top: 0px;
+          @include vendor('display', 'flex');
+          @include vendor('flex-flow', 'column');
+          @include vendor('align-items', 'center');
+        }
+
         .description {
-          width: 70%;
-          margin: 6rem 0;
-          .title {
-            order: 0;
-          }
-          img {
-            order: 1;
-            width: 100%;
-            margin: 20px 0;
-            display: block;
-            position: relative;
-            left: -8px;
-          }
-          .project-type {
-            order: 2;
-            height: 50px;
-          }
-          .project-text {
-            order: 3;
-          }
-          .toolbar {
-            display: flex;
-            justify-content: space-between;
-            order: 4;
-            width: 100%;
-          }
+          widows: 100%;
+          margin-top: 0;
+          padding: 15px;
+          order: 2;
         }
-        img {
-          display: none;
+
+        .project-image {
+          text-align: center;
         }
+
+        .toolbar {
+          align-items: center;
+        }
+        // }
       }
+      // img {
+      //   order: 2;
+      //   margin: 20px auto;
+      //   width: 100%;
+      // }
     }
   }
 }
@@ -290,14 +349,23 @@
     margin-bottom: 3%;
   }
   #section {
-    #section .container-partial-width {
-      max-width: 90%;
+    .modal {
+      width: 100%;
     }
 
     .about-profile-layout {
-      @include vendor('flex-direction', 'column');
+      @include vendor('display', 'flex');
       @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
+      margin-top: 20px;
+      width: 90vw;
+      .about-profile-img-container > img {
+        width: 300px;
+      }
+    }
+
+    .about-profile-text {
+      width: 90vw;
     }
 
     .angled-banner {
@@ -309,10 +377,8 @@
         margin: 50px 0;
       }
     }
-    .about-profile-img {
-      width: 300px;
-    }
 
+    // TODO this should be removed? already declared
     .ethos-list {
       list-style: none;
       @include vendor('display', 'flex');
@@ -330,46 +396,39 @@
     }
 
     .skills-container {
-      margin-top: 80px;
+      margin-top: 20px;
       width: 100%;
     }
-  }
-  .projects {
-    .project {
-      @include vendor('flex-direction', 'column');
-      @include vendor('align-items', 'center');
-      @include vendor('justify-content', 'center');
-      .description {
-        width: 70%;
-        margin: 6rem 0;
-        .title {
-          order: 0;
-        }
-        img {
-          order: 1;
+
+    .skills_list {
+      margin-bottom: 20px;
+    }
+
+    .projects {
+      .project {
+        @include vendor('display', 'flex');
+        @include vendor('flex-direction', 'column');
+        @include vendor('align-items', 'center');
+        @include vendor('justify-content', 'center');
+        width: 90vw;
+        .description {
           width: 100%;
-          margin: 20px 0;
-          display: block;
-          position: relative;
-          left: -8px;
-        }
-        .project-type {
+          margin-top: 0;
+          padding: 15px;
           order: 2;
-          height: 50px;
         }
-        .project-text {
-          order: 3;
-        }
-        .toolbar {
-          display: flex;
-          justify-content: space-between;
-          order: 4;
+
+        .project-details {
           width: 100%;
         }
+
+        .project-image > img {
+          width: 90%;
+        }
       }
-      img {
-        display: none;
-      }
+      // img {
+      //   display: none;
+      // }
     }
   }
 }

@@ -10,6 +10,7 @@ input[type='submit'],
 input[type='reset'],
 input[type='button'],
 button,
+a.button,
 .button {
   @include vendor('appearance', 'none');
   @include vendor(
@@ -36,7 +37,7 @@ button,
   white-space: nowrap;
 
   &:hover {
-    background-color: _palette(border-bg);
+    background-color: _palette(highlight);
   }
 
   &:active {
@@ -80,4 +81,8 @@ input[type='reset'],
 input[type='button'],
 button {
   line-height: calc(#{_size(element-height)} - 2px);
+}
+
+a.button:hover {
+  background-color: _palette(fg-highlight) !important;
 }
