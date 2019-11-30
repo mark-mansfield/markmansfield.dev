@@ -35,7 +35,7 @@ class Header extends React.Component {
         <nav>
           <ul>
             <li>
-              <Scroll type="class" element="projects">
+              <Scroll type="class" element="portfolio">
                 <a className="button">projects</a>
               </Scroll>
             </li>{' '}

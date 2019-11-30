@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import SimpleBanner from './presentation-components/angled-banner/AngledBanner'
+
 import ScrollAnimation from 'react-animate-on-scroll'
 const Skills = () => {
   return (

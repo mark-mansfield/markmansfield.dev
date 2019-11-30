@@ -21,7 +21,7 @@
   ul > li {
     padding-left: 0em;
   }
-  .container-partial-width {
+  .main-col-width {
     max-width: 1200px;
     text-align: center;
   }
@@ -40,13 +40,13 @@
     @include vendor('justify-content', 'space-between');
     width: 100%;
     margin: 100 0;
-    margin-top: 50px;
+    padding-top: 160px;
   }
 
   .about-profile-img-container {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'column');
-    @include vendor('justify-content', 'center');
+    @include vendor('justify-content', 'flex-start');
   }
 
   .about-profile-img-container > img {
@@ -153,6 +153,7 @@
     @include vendor('align-items', 'center');
     @include vendor('justify-content', 'center');
     width: 100%;
+    padding-top: 160px;
     .project {
       @include vendor('display', 'flex');
       @include vendor('flex-direction', 'column');
@@ -183,6 +184,10 @@
       .project-title {
         text-align: center;
         flex-grow: 3;
+      }
+
+      .project-type {
+        color: #ea0b48;
       }
 
       .description {
@@ -279,7 +284,7 @@
 // medium break point
 @include breakpoint(medium) {
   #section {
-    // .container-partial-width {
+    // .main-col-width {
     //   max-width: 100%;
     // }
 
@@ -330,13 +335,7 @@
         .toolbar {
           align-items: center;
         }
-        // }
       }
-      // img {
-      //   order: 2;
-      //   margin: 20px auto;
-      //   width: 100%;
-      // }
     }
   }
 }
@@ -355,7 +354,7 @@
       @include vendor('display', 'flex');
       @include vendor('align-items', 'center');
       @include vendor('justify-content', 'center');
-      margin-top: 20px;
+      padding-top: 20px;
       width: 90vw;
       .about-profile-img-container > img {
         width: 300px;
@@ -403,11 +402,14 @@
     }
 
     .projects {
+      padding-top: 20px;
+
       .project {
         @include vendor('display', 'flex');
         @include vendor('flex-direction', 'column');
         @include vendor('align-items', 'center');
         @include vendor('justify-content', 'center');
+
         width: 90vw;
         .description {
           width: 100%;

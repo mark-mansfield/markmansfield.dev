@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
               <ListItemText primary="About Me" />
             </ListItem>
           </Scroll>
-          <Scroll type="class" element="projects">
+          <Scroll type="class" element="portfolio">
             <ListItem button key="portfolio" style={{ textAlign: 'center' }}>
               <ListItemText primary="Projects" />
             </ListItem>
@@ -179,6 +179,7 @@ class IndexPage extends React.Component {
                 <MdClose className="modal__close" style={{ color: 'black' }} />
               </div>
               <section
+                js-data-id="contact-modal"
                 style={{
                   display: 'flex',
                   flexDirection: 'row',
@@ -193,7 +194,6 @@ class IndexPage extends React.Component {
                     className="modal__toolbar"
                     ref={toolbar => (this.toolbar = toolbar)}
                   />
-
                   <ContactForm
                     env={this.props.env}
                     closeModalRef={this.closeModal}
@@ -209,6 +209,7 @@ class IndexPage extends React.Component {
             onClose={this.toggleDrawer('left', false)}
           >
             <div
+              js-data-id="side-drawer"
               tabIndex={0}
               role="button"
               onClick={this.toggleDrawer('left', false)}
@@ -228,20 +229,52 @@ class IndexPage extends React.Component {
             modalState={this._handleShowModal}
           />
 
-          {/* <ScrollAnimation
-            animateIn="fadeIn"
-            animateOnce={true}
-            duration={0.5}
-            delay={500}
-          >
-            <SayHello modalState={this._handleShowModal} />
-          </ScrollAnimation> */}
-
-          <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
-            <About />
-          </ScrollAnimation>
-
-          <Projects />
+          <section id="section">
+            <a className="about_me"></a>
+            <ScrollAnimation animateIn="fadeIn" animateOnce={true} delay={400}>
+              <About />
+            </ScrollAnimation>
+            <div
+              style={{
+                width: '100%',
+                textAlign: 'center',
+                margin: '20px 0',
+                padding: '40px',
+                backgroundColor: '#f8f8f8',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <ul className="ethos-list main-col-width">
+                <li>
+                  <i className="fas fa-tachometer-alt fa-3x" />
+                  <h2>Fast</h2>
+                  <span>
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </span>
+                </li>
+                <li>
+                  <i className="fas fa-mobile fa-3x" />
+                  <h2>Responsive</h2>
+                  My layouts will work on any device, big or small.
+                </li>
+                <li>
+                  <i className="fas fa-lightbulb fa-3x" />
+                  <h2>Intuitive</h2>
+                  Strong preference for easy to use, intuitive UX/UI.
+                </li>
+                <li>
+                  <i className="fas fa-rocket fa-3x" />
+                  <h2>Dynamic</h2>
+                  Websites don't have to be static, I love making pages come to
+                  life.
+                </li>
+              </ul>
+            </div>
+            <a className="portfolio"></a>
+            <Projects />
+          </section>
         </div>
       </Layout>
     )
